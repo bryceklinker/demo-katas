@@ -23,13 +23,5 @@ namespace Vending.Machine.Test
 
             Assert.AreEqual("$0.10", _machine.DisplayText);
         }
-
-        [TestMethod]
-        public void WhenInsertingAQuarterThenBalanceIsTwentyFiveCents()
-        {
-            _machine.InsertCoin("QUARTER");
-
-            Assert.AreEqual("$0.25", _machine.DisplayText);
-        }
     }
 }
